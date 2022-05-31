@@ -55,7 +55,7 @@ empregos:
         ambiente:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Necessário para obter informações de PR, se houver
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        execute: mvn -B verifique org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=ogliarigu_Calculadora1
+        execute: mvn -B verifique org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=ogliarigu_Calculadora
 
   build-prd:
     executado: ubuntu-latest
